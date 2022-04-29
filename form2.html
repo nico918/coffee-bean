@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<body>
+  <form action="https://kredo.jp" method="get" >
+    <div class="form-group">
+    <label for="fullname"> Full Name</label>
+    <br>
+    <input type="text" name="fullname" id="fullname"placeholder="Last Name,First Name" required minlength="3" maxlength="20"> 
+    <br>
+    <label for="email">Email Address</label>
+    <br>
+    <input type="email" name="email" id="email" placeholder="mail@mail.com"> 
+    <br>
+    <label for="tel">Phone Number</label>
+    <br>
+    <input type="tel" name="tel" id=""placeholder="(63)912345678" required minlength="10" maxlength="20">
+    <br>
+    
+    <p> Reservation Details</p>
+    
+    <label for="number of guest">Number of Guest:</label>
+    <br>
+    <select name="number of guest" id="number of guest">
+      <option value="">Select number of guest</option>
+      <br>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <br><label for="date">Reservation Date:</label>
+    <br>
+    <input type="date" name="date" id="date">
+    <div>
+    <p>Reservation Time</p>
+     <input type="radio" name="time" value="morning" id="morning">
+     <label for="morning">Morning</label>
+     <input type="radio" name="time" value="afternoon" id="afternoon">
+     <label for="afternoon">Afternoon</label>
+     <input type="radio" name="time" value="night" id="night">
+     <label for="night">night</label>
+    </div>
+    <div class="form-group">
+      <p>Additional Request</p>
+     <textarea name="comment" id="comment" cols="30" rows="15" placeholder=""></textarea>
+     <p>Payment</p>
+     <img src="assets/image/reservation-cards.png" width="200px" height="50px">
+     <p>Payment Accepted Cards</p>
+     <label for="fullname"> Full Name</label>
+     <br>
+     <input type="text" name="fullname" id="fullname"placeholder="Jhon Doe" required minlength="3" maxlength="20"> 
+     <br>
+     <label for="fullname">Credit Card Number</label>
+     <br>
+     <input type="card number" name="card number" id="card number"placeholder="1234567890" required minlength="3" maxlength="12"> 
+     <br>
+     <input type="radio" name="agree" value="agree" id="agree">
+     <label for="agree">I agree in the terms and condition</label>
+     <br>
+     <button>send</button>
+    </div>
+  </div>
+  </form>
+</body>
+</html>
